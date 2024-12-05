@@ -1,0 +1,154 @@
+/* 全体リセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+header .logo h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+header .logo span {
+  color: #000000;
+  font-weight: lighter;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+/* ヒーローセクション */
+#hero {
+  background-color: #f5f5f5;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 2.5em;
+  color: #333333;
+}
+
+#hero h2 span {
+  color: #000000;
+}
+
+#hero p {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+#hero .btn {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#hero .btn:hover {
+  background-color: #444444;
+}
+
+/* セクション共通 */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* サービス */
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service {
+  flex: 1 1 300px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.service h4 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+/* フォーム */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444444;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  font-size: 0.9em;
+  border-top: 1px solid #e0e0e0;
+}
