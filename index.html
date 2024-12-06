@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>OpenAI o1 System Card</title>
+  <!-- 日本語Serifフォントの読み込み例（Noto Serif JP） -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="page-container">
 
-    <!-- タイトル、日付、著者部分 -->
+    <!-- ヘッダー部分（タイトル、著者、日付） -->
     <header class="header-section">
       <h1 class="document-title">OpenAI o1 System Card</h1>
       <div class="author-info">OpenAI</div>
-      <div class="date-info">December 5, 2024</div>
+      <div class="date-info">2024年12月5日</div>
     </header>
 
     <main>
-      <!-- 1. Introduction -->
+      <!-- 1. 序論 -->
       <section>
-        <h2>1 Introduction</h2>
+        <h2>1 序論</h2>
         <p>
-          The o1 model series is trained with large-scale reinforcement learning to reason using chain of thought. These advanced reasoning capabilities provide new avenues for improving the safety and robustness of our models. In particular, our models can reason about our safety policies in context when responding to potentially unsafe prompts. This leads to state-of-the-art performance on certain benchmarks for risks such as generating illicit advice, choosing stereotyped responses, and succumbing to known jailbreaks.
+          「OpenAI o1」モデルシリーズは、大規模な強化学習による思考連鎖（chain of thought）を用いた推論能力を備えています。これらの高度な推論能力は、安全性と堅牢性の向上に新たな可能性をもたらします。特に、本モデルは潜在的に危険なプロンプトに対応する際に、安全性ポリシーをコンテキストに応じて考慮することができます。これにより、不正な助言の生成、固定観念的な応答、既知の脱獄（jailbreak）技法への屈服など、特定のリスクベンチマークにおいて最先端の性能が実現されます。
         </p>
         <p>
-          Training models to incorporate a chain of thought before answering has the potential to unlock substantial benefits, while also increasing potential risks that stem from heightened intelligence. Our results underscore the need for building robust alignment methods, extensively stress-testing their efficacy, and maintaining meticulous risk management protocols. This report outlines the safety work carried out for the OpenAI o1 and OpenAI o1-mini models, including safety evaluations, external red teaming, and Preparedness Framework evaluations.
+          回答前に思考過程を組み込む訓練は、多大な利益を引き出す可能性がある一方で、高度な知性に由来する潜在的なリスクも増大させます。この報告書は、OpenAI o1およびOpenAI o1-miniモデルに対する安全性評価、外部によるテスト（red teaming）、および事前対策フレームワーク評価を含む、安全性向上に関する取り組みを概説します。
         </p>
       </section>
 
-      <!-- 2. Model data and training -->
+      <!-- 2. モデルのデータと訓練方法 -->
       <section>
-        <h2>2 Model data and training</h2>
+        <h2>2 モデルのデータと訓練方法</h2>
         <p>
-          The o1 large language model family is trained with reinforcement learning to perform complex reasoning. o1 thinks before it answers — it can produce a long chain of thought before responding to the user. OpenAI o1 is at its third release in this series (previously OpenAI o1-preview), while OpenAI o1-mini is a fast variant more suitable for tasks that require effective at coding. Through training on massive datasets, careful fine-tuning, and extensive safety evaluations, we aim to push the frontier of aligned, safe, and robust AI models.
+          OpenAI o1モデルファミリーは、複雑な推論を可能にするため強化学習を活用しています。o1はユーザーに回答する前に思考過程を経て、長いchain of thoughtを生成できます。OpenAI o1は本シリーズの第3版（以前のOpenAI o1-previewに続く）であり、OpenAI o1-miniはより高速かつコーディング作業などに適した軽量モデルです。大規模データセット上での学習、慎重な微調整、そして多面的な安全性評価を通じ、我々は整合性が高く、安全で堅牢なAIモデルの新たな地平を切り開くことを目指しています。
         </p>
       </section>
     </main>
