@@ -3,31 +3,33 @@ html, body {
   padding: 0;
   background: #fff;
   color: #000;
-  font-family: "Georgia", "Times New Roman", serif;
-  line-height: 1.6;
+  font-family: "Noto Serif JP", serif;
+  line-height: 1.8;
   font-size: 16px;
 }
 
 .page-container {
   max-width: 700px;
-  margin: 50px auto;
+  margin: 80px auto;
   padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .header-section {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .document-title {
-  font-size: 2em;
+  font-size: 2.2em;
   margin: 0;
-  font-weight: normal;
+  font-weight: 700;
 }
 
 .author-info {
   font-style: italic;
   margin-top: 10px;
+  font-weight: 400;
 }
 
 .date-info {
@@ -38,12 +40,12 @@ html, body {
 
 h2 {
   font-size: 1.5em;
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 20px;
-  font-weight: normal;
+  font-weight: 700;
 }
 
 p {
   text-align: justify;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
