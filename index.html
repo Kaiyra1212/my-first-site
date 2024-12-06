@@ -3,43 +3,44 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OpenAI o1 System Card</title>
-  <!-- 日本語Serifフォントの読み込み例（Noto Serif JP） -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <title>家族の記録</title>
   <link rel="stylesheet" href="style.css"/>
+  <!-- フォント例：Noto Serif JPを読み込み -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="page-container">
 
-    <!-- ヘッダー部分（タイトル、著者、日付） -->
-    <header class="header-section">
-      <h1 class="document-title">OpenAI o1 System Card</h1>
-      <div class="author-info">OpenAI</div>
-      <div class="date-info">2024年12月5日</div>
-    </header>
+  <header class="site-header">
+    <nav class="main-nav">
+      <a href="index.html">ホーム</a> | 
+      <a href="about.html">わたしについて</a> | 
+      <a href="archive.html">アーカイブ</a>
+    </nav>
+    <h1 class="site-title">家族の記録</h1>
+    <p class="site-subtitle">静かに紡ぐ、わたしと家族の日々</p>
+  </header>
 
-    <main>
-      <!-- 1. 序論 -->
-      <section>
-        <h2>1 序論</h2>
-        <p>
-          「OpenAI o1」モデルシリーズは、大規模な強化学習による思考連鎖（chain of thought）を用いた推論能力を備えています。これらの高度な推論能力は、安全性と堅牢性の向上に新たな可能性をもたらします。特に、本モデルは潜在的に危険なプロンプトに対応する際に、安全性ポリシーをコンテキストに応じて考慮することができます。これにより、不正な助言の生成、固定観念的な応答、既知の脱獄（jailbreak）技法への屈服など、特定のリスクベンチマークにおいて最先端の性能が実現されます。
-        </p>
-        <p>
-          回答前に思考過程を組み込む訓練は、多大な利益を引き出す可能性がある一方で、高度な知性に由来する潜在的なリスクも増大させます。この報告書は、OpenAI o1およびOpenAI o1-miniモデルに対する安全性評価、外部によるテスト（red teaming）、および事前対策フレームワーク評価を含む、安全性向上に関する取り組みを概説します。
-        </p>
-      </section>
+  <main class="content">
+    <article class="post">
+      <h2>はじめての朝食の記憶</h2>
+      <p>
+        子供の頃、祖母が作ってくれた卵焼きの味が、今でも私の記憶の中で柔らかく揺らいでいる。
+        あの頃は、家族全員が同じテーブルを囲み、互いの顔を見ながら食事をしていた。
+        あたたかな光が障子越しに差し込む台所、湯気を立てる味噌汁の香り、そして母の優しい声。
+      </p>
+      <p>
+        そうした何気ない朝の光景が、今となってはかけがえのない宝物のように感じられる。
+        時間が経つにつれて家族の形は変わるけれど、その根底には変わらぬぬくもりが宿っているのだろう。
+      </p>
+      <a href="#" class="read-more">続きを読む</a>
+    </article>
 
-      <!-- 2. モデルのデータと訓練方法 -->
-      <section>
-        <h2>2 モデルのデータと訓練方法</h2>
-        <p>
-          OpenAI o1モデルファミリーは、複雑な推論を可能にするため強化学習を活用しています。o1はユーザーに回答する前に思考過程を経て、長いchain of thoughtを生成できます。OpenAI o1は本シリーズの第3版（以前のOpenAI o1-previewに続く）であり、OpenAI o1-miniはより高速かつコーディング作業などに適した軽量モデルです。大規模データセット上での学習、慎重な微調整、そして多面的な安全性評価を通じ、我々は整合性が高く、安全で堅牢なAIモデルの新たな地平を切り開くことを目指しています。
-        </p>
-      </section>
-    </main>
+    <!-- 他の記事も同様の構成で追加可能 -->
+  </main>
 
-  </div>
+  <footer class="site-footer">
+    <p>&copy; 2024 家族の記録</p>
+  </footer>
+
 </body>
 </html>
