@@ -1,59 +1,42 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaiyra1212.Weblog</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OpenAI o1 System Card</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <h1>Kaiyra1212.<span>Weblog</span></h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#about">私たちについて</a></li>
-        <li><a href="#blog">ブログ</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="page-container">
 
-  <section id="hero">
-    <div class="hero-content">
-      <h2>ようこそ、<span>未来の創造</span>へ</h2>
-      <p>私たちは明日の課題に挑むための斬新なアイデアを共有します。</p>
-    </div>
-  </section>
+    <!-- タイトル、日付、著者部分 -->
+    <header class="header-section">
+      <h1 class="document-title">OpenAI o1 System Card</h1>
+      <div class="author-info">OpenAI</div>
+      <div class="date-info">December 5, 2024</div>
+    </header>
 
-  <section id="about">
-    <h3>私たちについて</h3>
-    <p>
-      Kaiyra1212.Weblogは、新しい可能性を探求し、未来に向けた解決策や視点を提供するブログです。
-      あなたの挑戦を支援し、より良い明日を築くための情報を発信します。
-    </p>
-  </section>
+    <main>
+      <!-- 1. Introduction -->
+      <section>
+        <h2>1 Introduction</h2>
+        <p>
+          The o1 model series is trained with large-scale reinforcement learning to reason using chain of thought. These advanced reasoning capabilities provide new avenues for improving the safety and robustness of our models. In particular, our models can reason about our safety policies in context when responding to potentially unsafe prompts. This leads to state-of-the-art performance on certain benchmarks for risks such as generating illicit advice, choosing stereotyped responses, and succumbing to known jailbreaks.
+        </p>
+        <p>
+          Training models to incorporate a chain of thought before answering has the potential to unlock substantial benefits, while also increasing potential risks that stem from heightened intelligence. Our results underscore the need for building robust alignment methods, extensively stress-testing their efficacy, and maintaining meticulous risk management protocols. This report outlines the safety work carried out for the OpenAI o1 and OpenAI o1-mini models, including safety evaluations, external red teaming, and Preparedness Framework evaluations.
+        </p>
+      </section>
 
-  <section id="blog">
-    <h3>ブログ記事</h3>
-    <div class="blog-list">
-      <article class="blog-item">
-        <h4><a href="#blog1">記事1: 最新テクノロジーの動向</a></h4>
-        <p>未来を切り拓く新しい技術について深堀りします。</p>
-      </article>
-      <article class="blog-item">
-        <h4><a href="#blog2">記事2: イノベーションの秘訣</a></h4>
-        <p>成功するための革新的な考え方をご紹介します。</p>
-      </article>
-      <article class="blog-item">
-        <h4><a href="#blog3">記事3: サステナビリティの重要性</a></h4>
-        <p>持続可能な社会を実現するための方法を考察します。</p>
-      </article>
-    </div>
-  </section>
+      <!-- 2. Model data and training -->
+      <section>
+        <h2>2 Model data and training</h2>
+        <p>
+          The o1 large language model family is trained with reinforcement learning to perform complex reasoning. o1 thinks before it answers — it can produce a long chain of thought before responding to the user. OpenAI o1 is at its third release in this series (previously OpenAI o1-preview), while OpenAI o1-mini is a fast variant more suitable for tasks that require effective at coding. Through training on massive datasets, careful fine-tuning, and extensive safety evaluations, we aim to push the frontier of aligned, safe, and robust AI models.
+        </p>
+      </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2024 Kaiyra1212.Weblog. All rights reserved.</p>
-  </footer>
+  </div>
 </body>
 </html>
