@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>家族の記録</title>
-  <link rel="stylesheet" href="style.css"/>
-  <!-- フォント例：Noto Serif JPを読み込み -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>和風名刺風サイト</title>
+    <style>
+        body {
+            font-family: 'serif', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #5c5c5c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #333;
+        }
+    </style>
 </head>
 <body>
-
-  <header class="site-header">
-    <nav class="main-nav">
-      <a href="index.html">ホーム</a> | 
-      <a href="about.html">わたしについて</a> | 
-      <a href="archive.html">アーカイブ</a>
-    </nav>
-    <h1 class="site-title">家族の記録</h1>
-    <p class="site-subtitle">静かに紡ぐ、わたしと家族の日々</p>
-  </header>
-
-  <main class="content">
-    <article class="post">
-      <h2>はじめての朝食の記憶</h2>
-      <p>
-        子供の頃、祖母が作ってくれた卵焼きの味が、今でも私の記憶の中で柔らかく揺らいでいる。
-        あの頃は、家族全員が同じテーブルを囲み、互いの顔を見ながら食事をしていた。
-        あたたかな光が障子越しに差し込む台所、湯気を立てる味噌汁の香り、そして母の優しい声。
-      </p>
-      <p>
-        そうした何気ない朝の光景が、今となってはかけがえのない宝物のように感じられる。
-        時間が経つにつれて家族の形は変わるけれど、その根底には変わらぬぬくもりが宿っているのだろう。
-      </p>
-      <a href="#" class="read-more">続きを読む</a>
-    </article>
-
-    <!-- 他の記事も同様の構成で追加可能 -->
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2024 家族の記録</p>
-  </footer>
-
+    <div class="container">
+        <h1>あなたの名前</h1>
+        <p>役職: 例: 代表取締役</p>
+        <p>電話: 080-xxxx-xxxx</p>
+        <p>メール: example@domain.com</p>
+        <div class="contact-info">
+            <p>住所: 例: 東京都渋谷区</p>
+        </div>
+        <a href="mailto:example@domain.com" class="button">メールを送る</a>
+    </div>
 </body>
 </html>
